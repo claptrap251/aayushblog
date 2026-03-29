@@ -30,10 +30,16 @@ title: "Post Title"
 date: YYYY-MM-DD
 description: "Short summary for listing"
 tags: ["tag1", "tag2", "ai-assisted"]
+revisions: 0
 ---
+
+> **Revision counter:** I asked Claude to fix this post **0 times** before it got the details right. Peak AI experience.
+
 Content here...
 ```
 Always include the `"ai-assisted"` tag on any post where Claude helped write or generate content.
+
+**Revision counter:** Track how many times the user asks Claude to fix/change a post. Add `revisions: N` to frontmatter and a blockquote at the top of the post body showing the count. Increment it each time a revision is requested.
 
 Commit and push. The blog listing has tag filters and sorts newest first.
 

@@ -3,9 +3,14 @@ title: "Claw Bot Gives Me Anxiety"
 date: 2026-03-29
 description: "Claw bot messages me on WhatsApp, installs random packages, and has access to my entire system. This is fine."
 tags: ["ai", "workflow", "ai-assisted"]
+revisions: 4
 ---
 
-I use claw bot daily. I also don't fully trust it. These two things coexist.
+> **Revision counter:** I asked Claude to fix this post **4 times** before it got the details right. Peak AI experience.
+
+![me telling Claude to fix things again](https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyajB2ZG1rZnRmNXJxaDF0NXFnZ3B1NThvZno4dHZodHVqOWR3MXR0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IeKgCDlpTqRQbZEhBF/giphy.gif)
+
+I use [claw bot](https://openclaw.ai) daily. I also don't fully trust it. These two things coexist.
 
 ## The Anxiety
 
@@ -17,7 +22,7 @@ I'm also not entirely sure Anthropic loves that I'm hammering my Max subscriptio
 
 ## Dispatch
 
-This is where things get better. I've been using [Dispatch](https://claude.ai/dispatch) — Anthropic's own agent feature, currently in research preview. It's noticeably more stable than letting claw bot roam free. The killer feature? You can restrict which apps it has access to.
+This is where things get better. I've been using Dispatch — Anthropic's own agent feature built into Claude Desktop, currently in research preview. You pair your phone to your desktop via a QR code and assign tasks from your couch. It's noticeably more stable than letting claw bot roam free. The killer feature? You can restrict which apps it has access to.
 
 I hope that actually works. I genuinely do. But even the option existing makes me feel better about letting claw bot loose on my phone.
 
