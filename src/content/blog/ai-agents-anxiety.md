@@ -3,10 +3,10 @@ title: "Openclaw Gives Me Anxiety"
 date: 2026-03-29
 description: "Openclaw messages me on WhatsApp, installs random packages, and has access to my entire system. This is fine."
 tags: ["ai", "workflow", "ai-assisted"]
-revisions: 7
+revisions: 8
 ---
 
-> **Revision counter:** I asked Claude to fix this post **7 times** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **8 times** before it got the details right. Peak AI experience.
 
 ![me telling Claude to fix things again](https://media1.giphy.com/media/11fot0YzpQMA0g/giphy.gif?cid=9b38fe9144gp800077ljtc1cmbx6i1pcqjb9kdi6pc0cb8pq&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
@@ -24,7 +24,7 @@ I'm also not entirely sure Anthropic loves that I'm hammering my Max subscriptio
 
 This is where things get better. I've been using Dispatch — Anthropic's own agent feature built into Claude Desktop, currently in research preview. You pair your phone to your desktop via a QR code and assign tasks from your couch. It's noticeably more stable than letting openclaw roam free. The killer feature? You can restrict which apps it has access to.
 
-I hope that actually works. I genuinely do. But even the option existing makes me feel better about letting an AI agent loose on my phone.
+I hope that actually works. I genuinely do. But even the option existing makes me feel better about letting an AI agent loose on my computer — one that I can talk to from my phone.
 
 ## The Best Use Case So Far
 
