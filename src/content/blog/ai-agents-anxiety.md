@@ -1,13 +1,13 @@
 ---
-title: "AI Agents Give Me Anxiety"
+title: "Claw Bot Gives Me Anxiety"
 date: 2026-03-29
 description: "Claw bot messages me on WhatsApp, installs random packages, and has access to my entire system. This is fine."
 tags: ["ai", "workflow", "ai-assisted"]
 ---
 
-I use AI agents daily. I also don't fully trust them. These two things coexist.
+I use claw bot daily. I also don't fully trust it. These two things coexist.
 
-## Claw Bot
+## The Anxiety
 
 There's a Claude bot on WhatsApp that messages me. It's fun — genuinely useful for quick questions, random ideas, casual back-and-forth. But there's this low-level anxiety that comes with using it.
 
@@ -17,9 +17,9 @@ I'm also not entirely sure Anthropic loves that I'm hammering my Max subscriptio
 
 ## Dispatch
 
-This is where things get better. I've been using [Dispatch](https://dispatch.me) and it's noticeably more stable. The killer feature? You can restrict which apps it has access to.
+This is where things get better. I've been using [Dispatch](https://claude.ai/dispatch) — Anthropic's own agent feature, currently in research preview. It's noticeably more stable than letting claw bot roam free. The killer feature? You can restrict which apps it has access to.
 
-I hope that actually works. I genuinely do. But even the option existing makes me feel better about letting an AI loose on my phone.
+I hope that actually works. I genuinely do. But even the option existing makes me feel better about letting claw bot loose on my phone.
 
 ## The Best Use Case So Far
 
@@ -29,4 +29,4 @@ That alone justifies the whole thing.
 
 ## The Vibe
 
-AI agents in 2026 are like giving your car keys to a teenager. Extremely capable, occasionally terrifying, and you just have to hope the guardrails hold. But when they nail it, you wonder how you ever did things the slow way.
+Claw bot in 2026 is like giving your car keys to a teenager. Extremely capable, occasionally terrifying, and you just have to hope the guardrails hold. But when it nails it, you wonder how you ever did things the slow way.
