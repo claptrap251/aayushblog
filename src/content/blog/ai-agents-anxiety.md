@@ -3,12 +3,12 @@ title: "Claw Bot Gives Me Anxiety"
 date: 2026-03-29
 description: "Claw bot messages me on WhatsApp, installs random packages, and has access to my entire system. This is fine."
 tags: ["ai", "workflow", "ai-assisted"]
-revisions: 4
+revisions: 5
 ---
 
-> **Revision counter:** I asked Claude to fix this post **4 times** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **5 times** before it got the details right. Peak AI experience.
 
-![me telling Claude to fix things again](https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyajB2ZG1rZnRmNXJxaDF0NXFnZ3B1NThvZno4dHZodHVqOWR3MXR0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IeKgCDlpTqRQbZEhBF/giphy.gif)
+![me telling Claude to fix things again](https://media1.giphy.com/media/11fot0YzpQMA0g/giphy.gif?cid=9b38fe9144gp800077ljtc1cmbx6i1pcqjb9kdi6pc0cb8pq&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 I use [claw bot](https://openclaw.ai) daily. I also don't fully trust it. These two things coexist.
 
