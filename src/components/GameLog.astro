@@ -1,0 +1,65 @@
+---
+import yaml from "js-yaml";
+import fs from "node:fs";
+import path from "node:path";
+
+interface Game {
+  title: string;
+  completed: boolean;
+}
+
+interface YearEntry {
+  year: number;
+  games: Game[];
+}
+
+const gamesPath = path.join(process.cwd(), "src/data/games.yaml");
+const gamesData = yaml.load(fs.readFileSync(gamesPath, "utf8")) as YearEntry[];
+---
+
+<section class="game-log">
+  <p class="section-label">// game.log</p>
+
+  {gamesData.map((entry) => (
+    <div class="year-group">
+      <h3>{entry.year}</h3>
+      <div class="games">
+        {entry.games.map((game) => (
+          <div class:list={["game", { completed: game.completed }]}>
+            <span class="title">{game.title}</span>
+            {game.completed && <span class="check">✓</span>}
+          </div>
+        ))}
+      </div>
+    </div>
+  ))}
+</section>
+
+<style>
+  .game-log {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .year-group {
+    margin-bottom: 1.75rem;
+  }
+  .year-group h3 {
+    margin-bottom: 0.75rem;
+  }
+  .games {
+    font-size: 0.85rem;
+    line-height: 2;
+  }
+  .game.completed .title {
+    text-decoration: line-through;
+    color: var(--muted);
+  }
+  .game:not(.completed) .title {
+    color: var(--heading);
+  }
+  .check {
+    color: var(--accent);
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+  }
+</style>

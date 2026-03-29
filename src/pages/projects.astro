@@ -1,0 +1,59 @@
+---
+import Base from "../layouts/Base.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import yaml from "js-yaml";
+import fs from "node:fs";
+import path from "node:path";
+
+interface Project {
+  title: string;
+  description: string;
+  url: string;
+  tags: string[];
+}
+
+const projectsPath = path.join(process.cwd(), "src/data/projects.yaml");
+const projects = yaml.load(fs.readFileSync(projectsPath, "utf8")) as Project[];
+---
+
+<Base title="Projects">
+  <section class="projects-page">
+    <p class="section-label">// ls ~/projects</p>
+    <h1>Projects</h1>
+    <p class="subtitle">Things I've built, broken, and occasionally shipped.</p>
+
+    <div class="grid">
+      {projects.map((project) => (
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          url={project.url}
+          tags={project.tags}
+        />
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .projects-page {
+    padding: 4rem 0;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

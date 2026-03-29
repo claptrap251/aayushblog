@@ -1,0 +1,72 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const dateStr = new Date(post.data.date).toISOString().split("T")[0];
+---
+
+<Base title={post.data.title} description={post.data.description}>
+  <article class="blog-post">
+    <a href="/blog" class="back-link">← back to blog</a>
+
+    <h1>{post.data.title}</h1>
+
+    <div class="meta">
+      <span>{dateStr}</span>
+    </div>
+
+    <div class="tags">
+      {post.data.tags.map((tag: string) => (
+        <span class="tag">{tag}</span>
+      ))}
+    </div>
+
+    <hr />
+
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</Base>
+
+<style>
+  .blog-post {
+    padding: 3rem 0 5rem;
+  }
+  .back-link {
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    margin-bottom: 0.75rem;
+  }
+  .meta {
+    font-size: 0.75rem;
+    color: var(--muted);
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .tags {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin-bottom: 2rem;
+  }
+</style>

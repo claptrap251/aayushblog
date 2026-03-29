@@ -1,0 +1,102 @@
+---
+const pathname = Astro.url.pathname;
+const links = [
+  { href: "/", label: "home" },
+  { href: "/projects", label: "projects" },
+  { href: "/blog", label: "blog" },
+];
+---
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="site-name">/home/ash</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      menu
+    </button>
+    <div class="nav-links">
+      {links.map(link => (
+        <a
+          href={link.href}
+          class:list={[{ active: pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href)) }]}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<style>
+  nav {
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-name {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--heading);
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.85rem;
+  }
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: var(--heading);
+  }
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--body);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .menu-toggle {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      flex-direction: column;
+      padding: 1rem 1.5rem;
+      gap: 1rem;
+    }
+    .nav-links.open {
+      display: flex;
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const links = document.querySelector(".nav-links");
+  toggle?.addEventListener("click", () => {
+    const open = links?.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+</script>

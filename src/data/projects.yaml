@@ -1,0 +1,9 @@
+- title: "/home/ash"
+  description: "This website. Built with Astro, monospace everything, deployed from an Unraid server."
+  url: "https://github.com/claptrap251/aayushblog"
+  tags: ["astro", "css"]
+
+- title: "DesignForge"
+  description: "A self-hosted design review platform."
+  url: "https://github.com/claptrap251/DesignForge"
+  tags: ["typescript", "docker"]

@@ -1,0 +1,152 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+
+const allTags = [...new Set(posts.flatMap((p) => p.data.tags))].sort();
+---
+
+<Base title="Blog">
+  <section class="blog-page">
+    <p class="section-label">// ls ~/blog/*</p>
+    <h1>Blog</h1>
+    <p class="subtitle">Thoughts, guides, and notes.</p>
+
+    <div class="tag-filters">
+      <button class="tag-btn active" data-tag="all">all</button>
+      {allTags.map((tag) => (
+        <button class="tag-btn" data-tag={tag}>{tag}</button>
+      ))}
+    </div>
+
+    <div class="posts">
+      {posts.map((post) => (
+        <a href={`/blog/${post.id}`} class="post-entry" data-tags={post.data.tags.join(",")}>
+          <div class="post-header">
+            <h3>{post.data.title}</h3>
+            <span class="date">
+              {new Date(post.data.date).toISOString().split("T")[0]}
+            </span>
+          </div>
+          <p class="description">{post.data.description}</p>
+          <div class="tags">
+            {post.data.tags.map((tag: string) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .blog-page {
+    padding: 4rem 0;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  .tag-filters {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  .tag-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--body);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .tag-btn:hover {
+    border-color: var(--muted);
+    color: var(--heading);
+  }
+  .tag-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+  }
+  .posts {
+    margin-top: 1.5rem;
+  }
+  .post-entry {
+    display: block;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+  }
+  .post-entry:first-child,
+  .post-entry.first-visible {
+    border-top: 1px solid var(--border);
+  }
+  .post-entry:hover h3 {
+    color: var(--accent);
+  }
+  .post-entry.hidden {
+    display: none;
+  }
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .date {
+    font-size: 0.75rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .description {
+    font-size: 0.8rem;
+    color: var(--body);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+  .tags {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  @media (max-width: 600px) {
+    .post-header {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll(".tag-btn");
+  const posts = document.querySelectorAll(".post-entry");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const tag = btn.getAttribute("data-tag");
+
+      posts.forEach((post) => {
+        const postTags = post.getAttribute("data-tags") || "";
+        if (tag === "all" || postTags.split(",").includes(tag)) {
+          post.classList.remove("hidden");
+        } else {
+          post.classList.add("hidden");
+        }
+      });
+    });
+  });
+</script>

@@ -1,0 +1,29 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="404">
+  <section class="not-found">
+    <p class="section-label">// error 404</p>
+    <h1>Woops, looks like you are lost.</h1>
+    <p class="message">Here, have some KyoAni</p>
+    <img src="/images/404.gif" alt="404" class="gif" />
+    <a href="/" class="back">← back to /home/ash</a>
+  </section>
+</Base>
+
+<style>
+  .not-found {
+    padding: 5rem 0;
+  }
+  .gif {
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 2rem 0;
+    display: block;
+  }
+  .message {
+    margin: 1rem 0;
+    color: var(--muted);
+  }
+</style>

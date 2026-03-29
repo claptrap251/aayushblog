@@ -1,0 +1,29 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<div class:list={["social-links", className]}>
+  <a href="https://github.com/claptrap251" target="_blank" rel="noopener">github</a>
+  <a href="https://www.linkedin.com/in/aayush251/" target="_blank" rel="noopener">linkedin</a>
+  <a href="mailto:me@aayush.dev">email</a>
+</div>
+
+<style>
+  .social-links {
+    display: flex;
+    gap: 20px;
+    font-size: 0.85rem;
+  }
+  .social-links a {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+  }
+  .social-links a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+</style>

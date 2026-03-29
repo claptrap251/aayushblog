@@ -1,0 +1,186 @@
+---
+import Base from "../layouts/Base.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+import GameLog from "../components/GameLog.astro";
+import fs from "node:fs";
+import path from "node:path";
+
+let uptimeSeconds = 0;
+let buildTime = new Date().toISOString();
+
+const statusPath = path.join(process.cwd(), "src/data/server-status.json");
+if (fs.existsSync(statusPath)) {
+  const status = JSON.parse(fs.readFileSync(statusPath, "utf8"));
+  uptimeSeconds = status.uptimeSeconds;
+  buildTime = status.buildTime;
+}
+---
+
+<Base title="Home">
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="section-label">// hello world</p>
+        <h1>I'm <span class="accent">Aayush</span></h1>
+        <p class="bio">
+          Ex-DevOps turned developer — spent years convincing servers to behave,
+          now I convince code to do the same. Turns out knowing how things break
+          in production is weirdly useful when building them. I automate anything
+          that annoys me twice, vibecode open source stuff with AI (GPT, Gemini,
+          Claude — I'm not loyal, I'm efficient), and occasionally remember to
+          push to main instead of prod.
+        </p>
+        <SocialLinks />
+      </div>
+      <img src="/images/me.jpg" alt="Ash" class="hero-img" />
+    </div>
+  </section>
+
+  <section class="status-bar">
+    <p class="section-label">// server.status</p>
+    <div class="status-grid">
+      <div class="status-item">
+        <span class="status-label">uptime</span>
+        <span class="status-value" id="uptime" data-uptime={uptimeSeconds} data-build={buildTime}>calculating...</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">days since last incident</span>
+        <span class="status-value" id="incident">calculating...</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">status</span>
+        <span class="status-value online">● online</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="spotify">
+    <p class="section-label">// now.playing</p>
+    <h3>2025 wrapped</h3>
+    <iframe
+      style="border-radius:12px; margin-top: 1rem;"
+      src="https://open.spotify.com/embed/playlist/37i9dQZEVXd0JuoKtIlzmr?utm_source=generator&theme=0"
+      width="100%"
+      height="152"
+      frameborder="0"
+      allowfullscreen
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
+  </section>
+
+  <GameLog />
+</Base>
+
+<style>
+  .hero {
+    padding: 5rem 0 3rem;
+  }
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  .hero-text {
+    flex: 1;
+  }
+  .accent {
+    color: var(--accent);
+  }
+  .bio {
+    margin: 1.25rem 0 2.5rem;
+    max-width: 500px;
+  }
+  .hero-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid var(--border);
+  }
+
+  .spotify {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .spotify h3 {
+    margin-top: 0.5rem;
+  }
+
+  .status-bar {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .status-grid {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .status-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .status-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .status-value {
+    font-size: 0.9rem;
+    color: var(--heading);
+  }
+  .status-value.online {
+    color: #4ade80;
+  }
+
+  @media (max-width: 600px) {
+    .hero-content {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    .hero-img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+</style>
+
+<script>
+  const uptimeEl = document.getElementById("uptime");
+  const incidentEl = document.getElementById("incident");
+
+  // Uptime baked in at build time from /proc/uptime, ticks forward in browser
+  const baseUptime = parseInt(uptimeEl?.getAttribute("data-uptime") || "0");
+  const buildTime = new Date(uptimeEl?.getAttribute("data-build") || new Date().toISOString());
+
+  function format(totalSecs: number) {
+    const days = Math.floor(totalSecs / 86400);
+    const hours = Math.floor((totalSecs % 86400) / 3600);
+    const mins = Math.floor((totalSecs % 3600) / 60);
+    const secs = Math.floor(totalSecs % 60);
+    const months = Math.floor(days / 30);
+    const remDays = days % 30;
+    return `${months}mo ${remDays}d ${hours}h ${mins}m ${secs}s`;
+  }
+
+  function update() {
+    const elapsed = Math.floor((Date.now() - buildTime.getTime()) / 1000);
+    const currentUptime = baseUptime + elapsed;
+
+    if (uptimeEl) {
+      uptimeEl.textContent = format(currentUptime);
+    }
+
+    // Days since last incident = total uptime days (server hasn't crashed!)
+    if (incidentEl) {
+      const days = Math.floor(currentUptime / 86400);
+      incidentEl.textContent = `${days} days (new record?)`;
+    }
+  }
+
+  update();
+  setInterval(update, 1000);
+</script>

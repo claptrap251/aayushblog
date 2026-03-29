@@ -1,0 +1,25 @@
+- year: 2026
+  games:
+    - title: "Hades II (Switch 2)"
+      completed: true
+    - title: "EsotericEbb (Steam)"
+      completed: true
+
+- year: 2025
+  games:
+    - title: "Expedition 33 (Xbox)"
+      completed: true
+    - title: "Hollow Knight: Silksong (Xbox)"
+      completed: true
+    - title: "Dredge (Xbox)"
+      completed: true
+    - title: "Split Fiction (Xbox)"
+      completed: true
+    - title: "Balatro (Xbox)"
+      completed: true
+    - title: "Ghost of Yotei (PS5)"
+      completed: true
+    - title: "Blue Prince (Xbox)"
+      completed: true
+    - title: "Outer Wilds (Steam)"
+      completed: true
