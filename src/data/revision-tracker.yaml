@@ -1,0 +1,12 @@
+# Tracks how many times Claude was asked to revise each blog post.
+# Because AI + human collaboration = lots of "no, not like that."
+
+- slug: claude-workflow
+  title: "I'm Using AI to Write This Post About Using AI"
+  revisions: 2
+  notes: "Tone was too self-deprecating, had to trim length"
+
+- slug: ai-agents-anxiety
+  title: "Openclaw Gives Me Anxiety"
+  revisions: 8
+  notes: "Called openclaw 'claw bot', then 'Claude bot', wrong Dispatch link, wrong gif, too wordy — the post became its own proof of concept"

@@ -39,7 +39,7 @@ Content here...
 ```
 Always include the `"ai-assisted"` tag on any post where Claude helped write or generate content.
 
-**Revision counter:** Track how many times the user asks Claude to fix/change a post. Add `revisions: N` to frontmatter and a blockquote at the top of the post body showing the count. Increment it each time a revision is requested.
+**Revision counter:** Track how many times the user asks Claude to fix/change a post. Add `revisions: N` to frontmatter and a blockquote at the top of the post body showing the count. Increment it each time a revision is requested. Also update `src/data/revision-tracker.yaml` with the final count and a short note on what went wrong. Always show the user the full post after making changes.
 
 Commit and push. The blog listing has tag filters and sorts newest first.
 
