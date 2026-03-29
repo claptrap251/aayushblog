@@ -29,10 +29,12 @@ Create `src/content/blog/<slug>.md`:
 title: "Post Title"
 date: YYYY-MM-DD
 description: "Short summary for listing"
-tags: ["tag1", "tag2"]
+tags: ["tag1", "tag2", "ai-assisted"]
 ---
 Content here...
 ```
+Always include the `"ai-assisted"` tag on any post where Claude helped write or generate content.
+
 Commit and push. The blog listing has tag filters and sorts newest first.
 
 ### Add/update games
@@ -72,6 +74,7 @@ The deploy script (`build-and-deploy.sh`) runs on Unraid via User Scripts cron. 
 ## Rules
 
 - Don't change the design system (colors, font, layout) without asking
-- Keep the aloof/funny tone in blog posts and bio
+- Keep the funny/aloof tone in blog posts and bio — confident, not self-deprecating
+- Keep blog posts concise — don't over-explain or pad with filler
 - Always `npm run build` to verify before pushing
 - Commit messages: `feat:`, `fix:`, or `chore:` prefix
