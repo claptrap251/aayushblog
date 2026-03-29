@@ -1,16 +1,16 @@
 ---
-title: "Claw Bot Gives Me Anxiety"
+title: "Openclaw Gives Me Anxiety"
 date: 2026-03-29
-description: "Claw bot messages me on WhatsApp, installs random packages, and has access to my entire system. This is fine."
+description: "Openclaw messages me on WhatsApp, installs random packages, and has access to my entire system. This is fine."
 tags: ["ai", "workflow", "ai-assisted"]
-revisions: 5
+revisions: 6
 ---
 
-> **Revision counter:** I asked Claude to fix this post **5 times** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **6 times** before it got the details right. Peak AI experience.
 
 ![me telling Claude to fix things again](https://media1.giphy.com/media/11fot0YzpQMA0g/giphy.gif?cid=9b38fe9144gp800077ljtc1cmbx6i1pcqjb9kdi6pc0cb8pq&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
-I use [claw bot](https://openclaw.ai) daily. I also don't fully trust it. These two things coexist.
+I use [openclaw](https://openclaw.ai) daily. I also don't fully trust it. These two things coexist.
 
 ## The Anxiety
 
@@ -22,9 +22,9 @@ I'm also not entirely sure Anthropic loves that I'm hammering my Max subscriptio
 
 ## Dispatch
 
-This is where things get better. I've been using Dispatch — Anthropic's own agent feature built into Claude Desktop, currently in research preview. You pair your phone to your desktop via a QR code and assign tasks from your couch. It's noticeably more stable than letting claw bot roam free. The killer feature? You can restrict which apps it has access to.
+This is where things get better. I've been using Dispatch — Anthropic's own agent feature built into Claude Desktop, currently in research preview. You pair your phone to your desktop via a QR code and assign tasks from your couch. It's noticeably more stable than letting openclaw roam free. The killer feature? You can restrict which apps it has access to.
 
-I hope that actually works. I genuinely do. But even the option existing makes me feel better about letting claw bot loose on my phone.
+I hope that actually works. I genuinely do. But even the option existing makes me feel better about letting openclaw loose on my phone.
 
 ## The Best Use Case So Far
 
@@ -34,4 +34,4 @@ That alone justifies the whole thing.
 
 ## The Vibe
 
-Claw bot in 2026 is like giving your car keys to a teenager. Extremely capable, occasionally terrifying, and you just have to hope the guardrails hold. But when it nails it, you wonder how you ever did things the slow way.
+Openclaw in 2026 is like giving your car keys to a teenager. Extremely capable, occasionally terrifying, and you just have to hope the guardrails hold. But when it nails it, you wonder how you ever did things the slow way.
