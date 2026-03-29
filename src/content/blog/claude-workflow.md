@@ -2,7 +2,7 @@
 title: "I'm Using AI to Write This Post About Using AI"
 date: 2026-03-29
 description: "How I use Claude to go from idea to published blog post in minutes. The future is already here and it's weirdly casual."
-tags: ["meta", "ai", "astro", "workflow"]
+tags: ["meta", "ai", "astro", "workflow", "ai-assisted"]
 ---
 
 Yes, this post was made with the help of Claude. Yes, I see the irony. Let's move on.
