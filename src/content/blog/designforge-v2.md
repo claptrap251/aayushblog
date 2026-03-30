@@ -2,8 +2,11 @@
 title: "DesignForge v2: From Design Review Tool to AI-Powered Knowledge Base"
 date: 2026-03-30
 description: "DesignForge v2 adds GitHub markdown scraping, a CLI tool for AI agents, and a Claude Code skill. It's like Context7, but for your own data."
-tags: ["designforge", "ai", "claude", "cli", "open-source"]
+tags: ["designforge", "ai", "claude", "cli", "open-source", "ai-assisted"]
+revisions: 1
 ---
+
+> **Revision counter:** I asked Claude to fix this post **1 time** before it got the details right. Peak AI experience.
 
 DesignForge started as a self-hosted design review platform — upload designs, pin comments on them, collaborate asynchronously. v1 was about getting the core right. v2 turns it into something bigger: a knowledge base that AI agents can tap into while they work.
 
@@ -21,6 +24,21 @@ For anyone catching up, DesignForge v1 was a complete design review platform bui
 - **Dark mode** because obviously
 - **CLI-ready API** with HTTP Basic Auth for programmatic access
 - **Docker support** for easy deployment
+- **Document similarity engine** — automatically finds related designs within a project
+
+### Document Relations
+
+When you open a markdown design, a "Related" panel shows other documents in the project ranked by relevance score. This isn't a keyword search — it's a hybrid similarity engine that runs entirely locally.
+
+The engine computes three signals and blends them:
+
+1. **Document-level TF-IDF** — broad topical overlap across the full document
+2. **Chunk-level TF-IDF** — splits each markdown file by headings and finds the best-matching section pair between two documents, so a one-paragraph section overlap doesn't get buried by unrelated content
+3. **Embedding similarity** (optional) — local `all-MiniLM-L6-v2` model via `@xenova/transformers`, enabled with `SIMILARITY_USE_EMBEDDINGS=true`. No external API calls, runs on your machine.
+
+Each result shows the relevance percentage, which sections matched, and the shared terms as pill tags. No configuration required — it runs on every project automatically.
+
+This is the engine that powers `dfcli related` in v2. When you hand the CLI a local file, it scores that file against your entire DesignForge project using the same pipeline.
 
 The whole thing runs from a single `npm start` or `docker compose up`. No cloud services, no subscriptions, no data leaving your machine.
 
@@ -112,4 +130,3 @@ npx prisma db push
 npm run dev
 ```
 
-The future of coding isn't AI replacing developers — it's AI having the right context. DesignForge makes sure it does.
