@@ -3,6 +3,11 @@
   url: "https://github.com/claptrap251/aayushblog"
   tags: ["astro", "css"]
 
+- title: "Brain-EE"
+  description: "Research paper on brain enjoyment evaluation using commercial EEG headbands."
+  url: "https://www.researchgate.net/publication/299357054_Brain-EE_Brain_Enjoyment_Evaluation_using_Commercial_EEG_Headband"
+  tags: ["research", "eeg", "grad-school"]
+
 - title: "DesignForge"
   description: "A self-hosted design review platform."
   url: "https://github.com/claptrap251/DesignForge"
