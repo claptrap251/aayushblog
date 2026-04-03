@@ -3,10 +3,10 @@ title: "Claude Is Great Until It Isn't"
 date: 2026-04-03
 description: "Using Claude Opus 4.6 for design work is incredible — until you hit 40% context and it forgets everything you just said."
 tags: ["ai", "workflow", "ai-assisted"]
-revisions: 2
+revisions: 3
 ---
 
-> **Revision counter:** I asked Claude to fix this post **2 times** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **3 times** before it got the details right. Peak AI experience.
 
 ![short term memory loss](https://media3.giphy.com/media/qZgHBlenHa1zKqy6Zn/giphy.gif?cid=9b38fe9142ouusrtt3vflo1l4wax7cy7cheumi017ebfkk4s&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
@@ -40,4 +40,4 @@ I'm planning to research and benchmark different context compression methods to 
 
 ---
 
-*Mood: [Shadowy Light — Gorillaz](https://open.spotify.com/track/1WHBtgrgSKDJd9Y8vHNZqH) off the new album Mountain.*
+*Mood: [![The Mountain](https://upload.wikimedia.org/wikipedia/en/e/ea/Gorillaz_-_The_Mountain.png)](https://open.spotify.com/track/1WHBtgrgSKDJd9Y8vHNZqH) [Shadowy Light — Gorillaz](https://open.spotify.com/track/1WHBtgrgSKDJd9Y8vHNZqH) off the new album Mountain.*
