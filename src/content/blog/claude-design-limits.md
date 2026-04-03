@@ -3,10 +3,10 @@ title: "Claude Is Great Until It Isn't"
 date: 2026-04-03
 description: "Using Claude Opus 4.6 for design work is incredible — until you hit 40% context and it forgets everything you just said."
 tags: ["ai", "workflow", "ai-assisted"]
-revisions: 0
+revisions: 1
 ---
 
-> **Revision counter:** I asked Claude to fix this post **0 times** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **1 time** before it got the details right. Peak AI experience.
 
 ![short term memory loss](https://media3.giphy.com/media/qZgHBlenHa1zKqy6Zn/giphy.gif?cid=9b38fe9142ouusrtt3vflo1l4wax7cy7cheumi017ebfkk4s&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
@@ -35,3 +35,5 @@ It doesn't think about the stuff between the systems. The glue. The "wait, this 
 Look, despite all this, Claude is still the best tool I've got for design work. The trick is knowing when to start a fresh context instead of pushing through. Treat the 40% mark like a save point — summarize where you are, start a new session, paste the summary, keep going.
 
 It's not a replacement for engineering judgment. It's a force multiplier for it. Big difference.
+
+I'm planning to research and benchmark different context compression methods to see which one actually gets better accuracy past that 40% wall. If there's a way to squeeze more out of these long sessions, I'm going to find it.
