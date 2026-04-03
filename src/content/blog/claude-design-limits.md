@@ -3,10 +3,10 @@ title: "Claude Is Great Until It Isn't"
 date: 2026-04-03
 description: "Using Claude Opus 4.6 for design work is incredible — until you hit 40% context and it forgets everything you just said."
 tags: ["ai", "workflow", "ai-assisted"]
-revisions: 1
+revisions: 2
 ---
 
-> **Revision counter:** I asked Claude to fix this post **1 time** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **2 times** before it got the details right. Peak AI experience.
 
 ![short term memory loss](https://media3.giphy.com/media/qZgHBlenHa1zKqy6Zn/giphy.gif?cid=9b38fe9142ouusrtt3vflo1l4wax7cy7cheumi017ebfkk4s&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
@@ -37,3 +37,7 @@ Look, despite all this, Claude is still the best tool I've got for design work. 
 It's not a replacement for engineering judgment. It's a force multiplier for it. Big difference.
 
 I'm planning to research and benchmark different context compression methods to see which one actually gets better accuracy past that 40% wall. If there's a way to squeeze more out of these long sessions, I'm going to find it.
+
+---
+
+*Mood: [Shadowy Light — Gorillaz](https://open.spotify.com/track/1WHBtgrgSKDJd9Y8vHNZqH) off the new album Mountain.*
