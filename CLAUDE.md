@@ -41,12 +41,15 @@ Always include the `"ai-assisted"` tag on any post where Claude helped write or 
 
 **Revision counter:** Track how many times the user asks Claude to fix/change a post. Add `revisions: N` to frontmatter and a blockquote at the top of the post body showing the count. Increment it each time a revision is requested. Also update `src/data/revision-tracker.yaml` with the final count and a short note on what went wrong. Always show the user the full post after making changes.
 
-**Mood/music:** When the user wants to add a mood song to a post, add it at the bottom after a `---` divider. Include a small clickable album art image (from Wikipedia) next to the song name linking to Spotify. Format:
+**Mood/music:** When the user wants to add a mood song to a post, add it at the bottom after a `---` divider using a Spotify embed iframe. Format:
 ```markdown
 ---
 
-*Mood: [![Album Name](album-art-url)](spotify-url) [Song — Artist](spotify-url) off the album Album Name.*
+*Mood:*
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/TRACK_ID?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 ```
+Use `theme=0` for dark mode. Extract the track ID from the Spotify URL.
 
 Commit and push. The blog listing has tag filters and sorts newest first.
 
