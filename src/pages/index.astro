@@ -26,7 +26,7 @@ if (fs.existsSync(statusPath)) {
   <section class="hero">
     <div class="hero-content">
       <div class="hero-text">
-        <p class="section-label">// hello world</p>
+        <p class="section-label">ash ~ % echo "hello world"</p>
         <h1>I'm <span class="accent">Aayush</span></h1>
         <p class="bio">
           Ex-DevOps turned developer — spent years convincing servers to behave,
@@ -44,7 +44,7 @@ if (fs.existsSync(statusPath)) {
 
   <section class="latest-post">
     <p class="section-label">cat ~/blog/latest</p>
-    <a href={`/blog/${latestPost.slug}/`} class="latest-post-link">
+    <a href={`/blog/${latestPost.id}/`} class="latest-post-link">
       <h3>{latestPost.data.title}</h3>
       <p class="latest-post-desc">{latestPost.data.description}</p>
       <span class="latest-post-date">{new Date(latestPost.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
@@ -52,7 +52,7 @@ if (fs.existsSync(statusPath)) {
   </section>
 
   <section class="status-bar">
-    <p class="section-label">// server.status</p>
+    <p class="section-label">ash ~ % uptime</p>
     <div class="status-grid">
       <div class="status-item">
         <span class="status-label">uptime</span>
