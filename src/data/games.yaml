@@ -2,30 +2,47 @@
   games:
     - title: "Hades II (Switch 2)"
       completed: true
+      url: "https://opencritic.com/game/16683/hades-ii"
     - title: "EsotericEbb (Steam)"
       completed: true
-    - title: "Coffee Talk (Switch 2)"
+      url: "https://opencritic.com/game/20180/esoteric-ebb"
+    - title: "Coffee Talk Tokyo (Switch 2)"
       completed: false
+      url: "https://opencritic.com/game/20625/coffee-talk-tokyo"
     - title: "Saros (PS5)"
       completed: true
+      url: "https://opencritic.com/game/19375/saros"
     - title: "Forza Horizon 6 (Xbox)"
       completed: false
+      url: "https://opencritic.com/game/19996/forza-horizon-6"
+    - title: "Fable (Xbox)"
+      completed: false
+    - title: "Little Rocket Lab (Xbox)"
+      completed: true
 
 - year: 2025
   games:
     - title: "Expedition 33 (Xbox)"
       completed: true
+      url: "https://opencritic.com/game/18026/clair-obscur-expedition-33"
     - title: "Hollow Knight: Silksong (Xbox)"
       completed: true
+      url: "https://opencritic.com/game/7425/hollow-knight-silksong"
     - title: "Dredge (Xbox)"
       completed: true
+      url: "https://opencritic.com/game/14348/dredge"
     - title: "Split Fiction (Xbox)"
       completed: true
+      url: "https://opencritic.com/game/18192/split-fiction"
     - title: "Balatro (Xbox)"
       completed: true
+      url: "https://opencritic.com/game/16300/balatro"
     - title: "Ghost of Yotei (PS5)"
       completed: true
+      url: "https://opencritic.com/game/18449/ghost-of-yotei"
     - title: "Blue Prince (Xbox)"
       completed: true
+      url: "https://opencritic.com/game/18352/blue-prince"
     - title: "Outer Wilds (Steam)"
       completed: true
+      url: "https://opencritic.com/game/7815/outer-wilds"

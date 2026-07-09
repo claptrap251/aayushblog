@@ -6,6 +6,7 @@ import path from "node:path";
 interface Game {
   title: string;
   completed: boolean;
+  url?: string;
 }
 
 interface YearEntry {
@@ -26,7 +27,11 @@ const gamesData = yaml.load(fs.readFileSync(gamesPath, "utf8")) as YearEntry[];
       <div class="games">
         {entry.games.map((game) => (
           <div class:list={["game", { completed: game.completed }]}>
-            <span class="title">{game.title}</span>
+            {game.url ? (
+              <a href={game.url} target="_blank" rel="noopener noreferrer" class="title">{game.title}</a>
+            ) : (
+              <span class="title">{game.title}</span>
+            )}
             {game.completed && <span class="check">✓</span>}
           </div>
         ))}
@@ -56,6 +61,12 @@ const gamesData = yaml.load(fs.readFileSync(gamesPath, "utf8")) as YearEntry[];
   }
   .game:not(.completed) .title {
     color: var(--heading);
+  }
+  a.title {
+    text-decoration-color: var(--border);
+  }
+  a.title:hover {
+    color: var(--accent) !important;
   }
   .check {
     color: var(--accent);
