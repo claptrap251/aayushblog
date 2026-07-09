@@ -3,10 +3,10 @@ title: "Still on Break"
 date: 2026-06-01
 description: "Taking a break from side projects. Tried Fable 5, sad about Xbox layoffs, finished Little Rocket Lab."
 tags: ["life", "gaming", "ai-assisted"]
-revisions: 2
+revisions: 3
 ---
 
-> **Revision counter:** I asked Claude to fix this post **2 times** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **3 times** before it got the details right. Peak AI experience.
 
 ![still recovering](/images/still-on-break.gif)
 
@@ -34,4 +34,4 @@ Get back to building stuff. Eventually.
 
 *Mood:*
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/37tCMzk6unnYNbt6orjGIF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/26RUl5YcnSbHpLATZJACqs?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
