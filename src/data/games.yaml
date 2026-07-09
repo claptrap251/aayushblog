@@ -44,3 +44,15 @@
     - title: "Outer Wilds (Steam)"
       completed: true
       url: "https://opencritic.com/game/7815/outer-wilds"
+
+- year: "Hall of Fame"
+  games:
+    - title: "Disco Elysium"
+      completed: true
+      url: "https://opencritic.com/game/7420/disco-elysium"
+    - title: "Bully: Scholarship Edition"
+      completed: true
+      url: "https://opencritic.com/game/6455/bully-scholarship-edition"
+    - title: "BioShock Infinite"
+      completed: true
+      url: "https://opencritic.com/game/1/bioshock-infinite"
