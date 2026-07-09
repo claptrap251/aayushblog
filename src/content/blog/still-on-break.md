@@ -3,10 +3,10 @@ title: "Still on Break"
 date: 2026-06-01
 description: "Taking a break from side projects. Tried Fable 5, sad about Xbox layoffs, finished Little Rocket Lab."
 tags: ["life", "gaming", "ai-assisted"]
-revisions: 4
+revisions: 5
 ---
 
-> **Revision counter:** I asked Claude to fix this post **4 times** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **5 times** before it got the details right. Peak AI experience.
 
 ![still recovering](/images/still-on-break.gif)
 
@@ -26,7 +26,7 @@ Got to try Claude Fable 5 a little bit. Can't really decide if it's good — hav
 
 ![pain](https://media4.giphy.com/media/iJJ6E58EttmFqgLo96/giphy.gif?cid=9b38fe91locyiz6jj8amfvktzkbzplcyxcgf5ivpxbwatdzm&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
-Sad about the Xbox layoffs. Not much else to say about that.
+Sad about the Xbox layoffs. I just hope Xbox is still a console by next year.
 
 ## The Plan
 
