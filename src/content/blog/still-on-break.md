@@ -1,22 +1,22 @@
 ---
 title: "Still on Break"
 date: 2026-06-01
-description: "Family emergency, viral infection, Xbox layoffs. At least I finished Little Rocket Lab."
+description: "Taking a break from side projects. Tried Fable 5, sad about Xbox layoffs, finished Little Rocket Lab."
 tags: ["life", "gaming", "ai-assisted"]
-revisions: 1
+revisions: 2
 ---
 
-> **Revision counter:** I asked Claude to fix this post **1 time** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **2 times** before it got the details right. Peak AI experience.
 
 ![still recovering](/images/still-on-break.gif)
 
-Still on break. Had to fly out for a family emergency for two weeks, came back, caught a viral infection, spent another two weeks feeling like death. I want to sleep all day.
+Still on break from side projects. Work is fine but haven't had the energy to build anything new. Sometimes you just need to not stare at code for a while.
 
 ## Gaming
 
-Finished **Little Rocket Lab** on Xbox though. Cozy, satisfying, exactly what my sick brain needed.
+Finished **Little Rocket Lab** on Xbox. Cozy, satisfying, good vibes.
 
-Also picked up **Saros** on PS5 earlier — Rahul Kohli FTW — but never got past the first boss before getting sick. Finally went back and finished it.
+Also finished **Saros** on PS5. Rahul Kohli FTW.
 
 ## Fable 5
 
@@ -28,7 +28,7 @@ Sad about the Xbox layoffs. Not much else to say about that.
 
 ## The Plan
 
-Same as last time. Recover. Sleep. Get back to building stuff. Eventually.
+Get back to building stuff. Eventually.
 
 ---
 
