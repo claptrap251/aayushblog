@@ -3,10 +3,10 @@ title: "Still on Break"
 date: 2026-06-01
 description: "Taking a break from side projects. Tried Fable 5, sad about Xbox layoffs, finished Little Rocket Lab."
 tags: ["life", "gaming", "ai-assisted"]
-revisions: 5
+revisions: 6
 ---
 
-> **Revision counter:** I asked Claude to fix this post **5 times** before it got the details right. Peak AI experience.
+> **Revision counter:** I asked Claude to fix this post **6 times** before it got the details right. Peak AI experience.
 
 ![still recovering](/images/still-on-break.gif)
 
@@ -15,8 +15,6 @@ Still on break from side projects. Work is fine but haven't had the energy to bu
 ## Gaming
 
 Finished **Little Rocket Lab** on Xbox. Cozy, satisfying, good vibes.
-
-Also finished **Saros** on PS5. Rahul Kohli FTW.
 
 ## Fable 5
 
