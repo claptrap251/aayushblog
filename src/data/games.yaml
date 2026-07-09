@@ -48,11 +48,10 @@
 - year: "Hall of Fame"
   games:
     - title: "Disco Elysium"
-      completed: true
-      url: "https://opencritic.com/game/7420/disco-elysium"
+      completed: false
+      url: "https://opencritic.com/game/8419/disco-elysium"
     - title: "Bully: Scholarship Edition"
-      completed: true
-      url: "https://opencritic.com/game/6455/bully-scholarship-edition"
+      completed: false
     - title: "BioShock Infinite"
-      completed: true
-      url: "https://opencritic.com/game/1/bioshock-infinite"
+      completed: false
+      url: "https://opencritic.com/game/9557/bioshock-infinite-the-complete-edition"
