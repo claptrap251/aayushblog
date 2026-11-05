@@ -18,8 +18,8 @@
 
 - slug: local-model-benchmark-shinkansen
   title: "I Made Local Models Build a Shinkansen Before Trusting Them"
-  revisions: 0
-  notes: "First draft, written from real benchmark run data"
+  revisions: 1
+  notes: "Attributed the runs to the exo cluster — both models were actually served locally by Strata on one M2 Ultra; rewrote the rig section"
 
 - slug: busy-season
   title: "Busy Season"
